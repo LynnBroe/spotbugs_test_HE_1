@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.7.3" sequence="0" timestamp="1680762933539" analysisTimestamp="1680766848470" release="">
+  <Project projectName="">
+    <Jar>D:\github\spotbugs_test_HE_1\classes\TestA$UMap.class</Jar>
+    <Jar>D:\github\spotbugs_test_HE_1\classes\TestA.class</Jar>
+  </Project>
+  <BugInstance type="EQ_UNUSUAL" priority="2" rank="17" abbrev="Eq" category="STYLE">
+    <Class classname="TestA">
+      <SourceLine classname="TestA" sourcefile="TestA.java" sourcepath="TestA.java"/>
+    </Class>
+    <Method classname="TestA" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="TestA" start="13" end="13" startBytecode="0" endBytecode="79" sourcefile="TestA.java" sourcepath="TestA.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="HE_EQUALS_USE_HASHCODE" priority="1" rank="14" abbrev="HE" category="BAD_PRACTICE">
+    <Class classname="TestA">
+      <SourceLine classname="TestA" sourcefile="TestA.java" sourcepath="TestA.java"/>
+    </Class>
+    <Method classname="TestA" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="TestA" start="13" end="13" startBytecode="0" endBytecode="79" sourcefile="TestA.java" sourcepath="TestA.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="NP_EQUALS_SHOULD_HANDLE_NULL_ARGUMENT" priority="2" rank="11" abbrev="NP" category="BAD_PRACTICE">
+    <Class classname="TestA">
+      <SourceLine classname="TestA" sourcefile="TestA.java" sourcepath="TestA.java"/>
+    </Class>
+    <Method classname="TestA" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="TestA" start="13" end="13" startBytecode="0" endBytecode="79" sourcefile="TestA.java" sourcepath="TestA.java"/>
+    </Method>
+    <LocalVariable name="o" register="1" pc="0" role="LOCAL_VARIABLE_PARAMETER_NAMED"/>
+  </BugInstance>
+  <BugInstance type="HE_SIGNATURE_DECLARES_HASHING_OF_UNHASHABLE_CLASS" priority="1" rank="5" abbrev="HE" category="CORRECTNESS">
+    <Class classname="TestA$UMap">
+      <SourceLine classname="TestA$UMap" start="3" end="3" sourcefile="TestA.java" sourcepath="TestA.java"/>
+    </Class>
+    <Class classname="TestA$UMap">
+      <SourceLine classname="TestA$UMap" sourcefile="TestA.java" sourcepath="TestA.java"/>
+    </Class>
+    <Type descriptor="LTestA;" role="TYPE_UNHASHABLE">
+      <SourceLine classname="TestA" start="2" end="19" sourcefile="TestA.java" sourcepath="TestA.java"/>
+    </Type>
+  </BugInstance>
+  <BugInstance type="SE_NO_SERIALVERSIONID" priority="3" rank="19" abbrev="SnVI" category="BAD_PRACTICE">
+    <Class classname="TestA$UMap">
+      <SourceLine classname="TestA$UMap" start="3" end="3" sourcefile="TestA.java" sourcepath="TestA.java"/>
+    </Class>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Thu, 6 Apr 2023 14:35:33 +0800" total_classes="2" referenced_classes="71" total_bugs="5" total_size="17" num_packages="1" java_version="11.0.17" vm_version="11.0.17+10-LTS-269" cpu_seconds="0.84" clock_seconds="6.96" peak_mbytes="427.46" alloc_mbytes="768.00" gc_seconds="0.01" priority_3="1" priority_2="2" priority_1="2">
+    <PackageStats package="" total_bugs="5" total_types="2" total_size="17" priority_3="1" priority_2="2" priority_1="2">
+      <ClassStats class="TestA" sourceFile="TestA.java" interface="false" size="14" bugs="3" priority_2="2" priority_1="1"/>
+      <ClassStats class="TestA$UMap" sourceFile="TestA.java" interface="false" size="3" bugs="2" priority_3="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="67" invocations="473" avgMicrosecondsPerInvocation="143" maxMicrosecondsPerInvocation="2753" standardDeviationMicrosecondsPerInvocation="292"/>
+      <ClassProfile name="edu.umd.cs.findbugs.FindBugs2" totalMilliseconds="45" invocations="2" avgMicrosecondsPerInvocation="22747" maxMicrosecondsPerInvocation="33460" standardDeviationMicrosecondsPerInvocation="10713"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="15" invocations="71" avgMicrosecondsPerInvocation="212" maxMicrosecondsPerInvocation="2833" standardDeviationMicrosecondsPerInvocation="493"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="14" invocations="71" avgMicrosecondsPerInvocation="206" maxMicrosecondsPerInvocation="2740" standardDeviationMicrosecondsPerInvocation="480"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.7.3" sequence="0" timestamp="1680762933539" analysisTimestamp="1680766939861" release="">
+  <Project projectName="">
+    <Jar>D:\github\spotbugs_test_HE_1\classes\TestA$UMap.class</Jar>
+    <Jar>D:\github\spotbugs_test_HE_1\classes\TestA.class</Jar>
+    <Jar>D:\github\spotbugs_test_HE_1\classes\TestB$UMap.class</Jar>
+    <Jar>D:\github\spotbugs_test_HE_1\classes\TestB.class</Jar>
+    <Jar>D:\github\spotbugs_test_HE_1\classes\TestC$UMap.class</Jar>
+    <Jar>D:\github\spotbugs_test_HE_1\classes\TestC.class</Jar>
+    <Jar>D:\github\spotbugs_test_HE_1\classes\TestD$UMap.class</Jar>
+    <Jar>D:\github\spotbugs_test_HE_1\classes\TestD.class</Jar>
+    <Jar>D:\github\spotbugs_test_HE_1\classes\TestE$UMap.class</Jar>
+    <Jar>D:\github\spotbugs_test_HE_1\classes\TestE.class</Jar>
+    <Jar>D:\github\spotbugs_test_HE_1\classes\TestF$UMap.class</Jar>
+    <Jar>D:\github\spotbugs_test_HE_1\classes\TestF.class</Jar>
+    <Jar>D:\github\spotbugs_test_HE_1\classes\TestG$UMap.class</Jar>
+    <Jar>D:\github\spotbugs_test_HE_1\classes\TestG.class</Jar>
+    <Jar>D:\github\spotbugs_test_HE_1\classes\TestH$UMap.class</Jar>
+    <Jar>D:\github\spotbugs_test_HE_1\classes\TestH.class</Jar>
+  </Project>
+  <BugInstance type="EQ_UNUSUAL" priority="2" rank="17" abbrev="Eq" category="STYLE">
+    <Class classname="TestA">
+      <SourceLine classname="TestA" sourcefile="TestA.java" sourcepath="TestA.java"/>
+    </Class>
+    <Method classname="TestA" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="TestA" start="13" end="13" startBytecode="0" endBytecode="79" sourcefile="TestA.java" sourcepath="TestA.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="HE_EQUALS_USE_HASHCODE" priority="1" rank="14" abbrev="HE" category="BAD_PRACTICE">
+    <Class classname="TestA">
+      <SourceLine classname="TestA" sourcefile="TestA.java" sourcepath="TestA.java"/>
+    </Class>
+    <Method classname="TestA" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="TestA" start="13" end="13" startBytecode="0" endBytecode="79" sourcefile="TestA.java" sourcepath="TestA.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="NP_EQUALS_SHOULD_HANDLE_NULL_ARGUMENT" priority="2" rank="11" abbrev="NP" category="BAD_PRACTICE">
+    <Class classname="TestA">
+      <SourceLine classname="TestA" sourcefile="TestA.java" sourcepath="TestA.java"/>
+    </Class>
+    <Method classname="TestA" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="TestA" start="13" end="13" startBytecode="0" endBytecode="79" sourcefile="TestA.java" sourcepath="TestA.java"/>
+    </Method>
+    <LocalVariable name="o" register="1" pc="0" role="LOCAL_VARIABLE_PARAMETER_NAMED"/>
+  </BugInstance>
+  <BugInstance type="HE_SIGNATURE_DECLARES_HASHING_OF_UNHASHABLE_CLASS" priority="1" rank="5" abbrev="HE" category="CORRECTNESS">
+    <Class classname="TestA$UMap">
+      <SourceLine classname="TestA$UMap" start="3" end="3" sourcefile="TestA.java" sourcepath="TestA.java"/>
+    </Class>
+    <Class classname="TestA$UMap">
+      <SourceLine classname="TestA$UMap" sourcefile="TestA.java" sourcepath="TestA.java"/>
+    </Class>
+    <Type descriptor="LTestA;" role="TYPE_UNHASHABLE">
+      <SourceLine classname="TestA" start="2" end="19" sourcefile="TestA.java" sourcepath="TestA.java"/>
+    </Type>
+  </BugInstance>
+  <BugInstance type="SE_NO_SERIALVERSIONID" priority="3" rank="19" abbrev="SnVI" category="BAD_PRACTICE">
+    <Class classname="TestA$UMap">
+      <SourceLine classname="TestA$UMap" start="3" end="3" sourcefile="TestA.java" sourcepath="TestA.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="EQ_UNUSUAL" priority="2" rank="17" abbrev="Eq" category="STYLE">
+    <Class classname="TestB">
+      <SourceLine classname="TestB" sourcefile="TestB.java" sourcepath="TestB.java"/>
+    </Class>
+    <Method classname="TestB" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="TestB" start="13" end="13" startBytecode="0" endBytecode="79" sourcefile="TestB.java" sourcepath="TestB.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="HE_EQUALS_USE_HASHCODE" priority="1" rank="14" abbrev="HE" category="BAD_PRACTICE">
+    <Class classname="TestB">
+      <SourceLine classname="TestB" sourcefile="TestB.java" sourcepath="TestB.java"/>
+    </Class>
+    <Method classname="TestB" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="TestB" start="13" end="13" startBytecode="0" endBytecode="79" sourcefile="TestB.java" sourcepath="TestB.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="HE_USE_OF_UNHASHABLE_CLASS" priority="1" rank="1" abbrev="HE" category="CORRECTNESS">
+    <Class classname="TestB">
+      <SourceLine classname="TestB" sourcefile="TestB.java" sourcepath="TestB.java"/>
+    </Class>
+    <Method classname="TestB" name="get" signature="(LTestB;)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="TestB" start="19" end="19" startBytecode="0" endBytecode="52" sourcefile="TestB.java" sourcepath="TestB.java"/>
+    </Method>
+    <Type descriptor="LTestB;" role="TYPE_UNHASHABLE">
+      <SourceLine classname="TestB" start="2" end="19" sourcefile="TestB.java" sourcepath="TestB.java"/>
+    </Type>
+    <Method classname="java.util.HashMap" name="get" signature="(Ljava/lang/Object;)Ljava/lang/Object;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.HashMap" start="553" end="553" startBytecode="0" endBytecode="130" sourcefile="HashMap.java" sourcepath="java/util/HashMap.java"/>
+    </Method>
+    <SourceLine classname="TestB" start="19" end="19" startBytecode="4" endBytecode="4" sourcefile="TestB.java" sourcepath="TestB.java"/>
+  </BugInstance>
+  <BugInstance type="NP_EQUALS_SHOULD_HANDLE_NULL_ARGUMENT" priority="2" rank="11" abbrev="NP" category="BAD_PRACTICE">
+    <Class classname="TestB">
+      <SourceLine classname="TestB" sourcefile="TestB.java" sourcepath="TestB.java"/>
+    </Class>
+    <Method classname="TestB" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="TestB" start="13" end="13" startBytecode="0" endBytecode="79" sourcefile="TestB.java" sourcepath="TestB.java"/>
+    </Method>
+    <LocalVariable name="o" register="1" pc="0" role="LOCAL_VARIABLE_PARAMETER_NAMED"/>
+  </BugInstance>
+  <BugInstance type="SE_NO_SERIALVERSIONID" priority="3" rank="19" abbrev="SnVI" category="BAD_PRACTICE">
+    <Class classname="TestB$UMap">
+      <SourceLine classname="TestB$UMap" start="3" end="3" sourcefile="TestB.java" sourcepath="TestB.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="EQ_UNUSUAL" priority="2" rank="17" abbrev="Eq" category="STYLE">
+    <Class classname="TestC">
+      <SourceLine classname="TestC" sourcefile="TestC.java" sourcepath="TestC.java"/>
+    </Class>
+    <Method classname="TestC" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="TestC" start="13" end="13" startBytecode="0" endBytecode="79" sourcefile="TestC.java" sourcepath="TestC.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="HE_EQUALS_USE_HASHCODE" priority="1" rank="14" abbrev="HE" category="BAD_PRACTICE">
+    <Class classname="TestC">
+      <SourceLine classname="TestC" sourcefile="TestC.java" sourcepath="TestC.java"/>
+    </Class>
+    <Method classname="TestC" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="TestC" start="13" end="13" startBytecode="0" endBytecode="79" sourcefile="TestC.java" sourcepath="TestC.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="HE_USE_OF_UNHASHABLE_CLASS" priority="1" rank="1" abbrev="HE" category="CORRECTNESS">
+    <Class classname="TestC">
+      <SourceLine classname="TestC" sourcefile="TestC.java" sourcepath="TestC.java"/>
+    </Class>
+    <Method classname="TestC" name="get" signature="(LTestC;)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="TestC" start="19" end="19" startBytecode="0" endBytecode="52" sourcefile="TestC.java" sourcepath="TestC.java"/>
+    </Method>
+    <Type descriptor="LTestC;" role="TYPE_UNHASHABLE">
+      <SourceLine classname="TestC" start="2" end="19" sourcefile="TestC.java" sourcepath="TestC.java"/>
+    </Type>
+    <Method classname="java.util.HashMap" name="get" signature="(Ljava/lang/Object;)Ljava/lang/Object;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.HashMap" start="553" end="553" startBytecode="0" endBytecode="130" sourcefile="HashMap.java" sourcepath="java/util/HashMap.java"/>
+    </Method>
+    <SourceLine classname="TestC" start="19" end="19" startBytecode="4" endBytecode="4" sourcefile="TestC.java" sourcepath="TestC.java"/>
+  </BugInstance>
+  <BugInstance type="NP_EQUALS_SHOULD_HANDLE_NULL_ARGUMENT" priority="2" rank="11" abbrev="NP" category="BAD_PRACTICE">
+    <Class classname="TestC">
+      <SourceLine classname="TestC" sourcefile="TestC.java" sourcepath="TestC.java"/>
+    </Class>
+    <Method classname="TestC" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="TestC" start="13" end="13" startBytecode="0" endBytecode="79" sourcefile="TestC.java" sourcepath="TestC.java"/>
+    </Method>
+    <LocalVariable name="o" register="1" pc="0" role="LOCAL_VARIABLE_PARAMETER_NAMED"/>
+  </BugInstance>
+  <BugInstance type="SE_NO_SERIALVERSIONID" priority="3" rank="19" abbrev="SnVI" category="BAD_PRACTICE">
+    <Class classname="TestC$UMap">
+      <SourceLine classname="TestC$UMap" start="3" end="3" sourcefile="TestC.java" sourcepath="TestC.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="EQ_UNUSUAL" priority="2" rank="17" abbrev="Eq" category="STYLE">
+    <Class classname="TestD">
+      <SourceLine classname="TestD" sourcefile="TestD.java" sourcepath="TestD.java"/>
+    </Class>
+    <Method classname="TestD" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="TestD" start="13" end="13" startBytecode="0" endBytecode="79" sourcefile="TestD.java" sourcepath="TestD.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="HE_EQUALS_USE_HASHCODE" priority="1" rank="14" abbrev="HE" category="BAD_PRACTICE">
+    <Class classname="TestD">
+      <SourceLine classname="TestD" sourcefile="TestD.java" sourcepath="TestD.java"/>
+    </Class>
+    <Method classname="TestD" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="TestD" start="13" end="13" startBytecode="0" endBytecode="79" sourcefile="TestD.java" sourcepath="TestD.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="HE_USE_OF_UNHASHABLE_CLASS" priority="1" rank="1" abbrev="HE" category="CORRECTNESS">
+    <Class classname="TestD">
+      <SourceLine classname="TestD" sourcefile="TestD.java" sourcepath="TestD.java"/>
+    </Class>
+    <Method classname="TestD" name="get" signature="(LTestD;)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="TestD" start="19" end="19" startBytecode="0" endBytecode="52" sourcefile="TestD.java" sourcepath="TestD.java"/>
+    </Method>
+    <Type descriptor="LTestD;" role="TYPE_UNHASHABLE">
+      <SourceLine classname="TestD" start="2" end="19" sourcefile="TestD.java" sourcepath="TestD.java"/>
+    </Type>
+    <Method classname="java.util.HashMap" name="get" signature="(Ljava/lang/Object;)Ljava/lang/Object;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.HashMap" start="553" end="553" startBytecode="0" endBytecode="130" sourcefile="HashMap.java" sourcepath="java/util/HashMap.java"/>
+    </Method>
+    <SourceLine classname="TestD" start="19" end="19" startBytecode="4" endBytecode="4" sourcefile="TestD.java" sourcepath="TestD.java"/>
+  </BugInstance>
+  <BugInstance type="NP_EQUALS_SHOULD_HANDLE_NULL_ARGUMENT" priority="2" rank="11" abbrev="NP" category="BAD_PRACTICE">
+    <Class classname="TestD">
+      <SourceLine classname="TestD" sourcefile="TestD.java" sourcepath="TestD.java"/>
+    </Class>
+    <Method classname="TestD" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="TestD" start="13" end="13" startBytecode="0" endBytecode="79" sourcefile="TestD.java" sourcepath="TestD.java"/>
+    </Method>
+    <LocalVariable name="o" register="1" pc="0" role="LOCAL_VARIABLE_PARAMETER_NAMED"/>
+  </BugInstance>
+  <BugInstance type="SE_NO_SERIALVERSIONID" priority="3" rank="19" abbrev="SnVI" category="BAD_PRACTICE">
+    <Class classname="TestD$UMap">
+      <SourceLine classname="TestD$UMap" start="3" end="3" sourcefile="TestD.java" sourcepath="TestD.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="EQ_UNUSUAL" priority="2" rank="17" abbrev="Eq" category="STYLE">
+    <Class classname="TestE">
+      <SourceLine classname="TestE" sourcefile="TestE.java" sourcepath="TestE.java"/>
+    </Class>
+    <Method classname="TestE" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="TestE" start="13" end="13" startBytecode="0" endBytecode="79" sourcefile="TestE.java" sourcepath="TestE.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="HE_EQUALS_USE_HASHCODE" priority="1" rank="14" abbrev="HE" category="BAD_PRACTICE">
+    <Class classname="TestE">
+      <SourceLine classname="TestE" sourcefile="TestE.java" sourcepath="TestE.java"/>
+    </Class>
+    <Method classname="TestE" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="TestE" start="13" end="13" startBytecode="0" endBytecode="79" sourcefile="TestE.java" sourcepath="TestE.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="HE_USE_OF_UNHASHABLE_CLASS" priority="1" rank="1" abbrev="HE" category="CORRECTNESS">
+    <Class classname="TestE">
+      <SourceLine classname="TestE" sourcefile="TestE.java" sourcepath="TestE.java"/>
+    </Class>
+    <Method classname="TestE" name="get" signature="(LTestE;)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="TestE" start="19" end="19" startBytecode="0" endBytecode="52" sourcefile="TestE.java" sourcepath="TestE.java"/>
+    </Method>
+    <Type descriptor="LTestE;" role="TYPE_UNHASHABLE">
+      <SourceLine classname="TestE" start="2" end="19" sourcefile="TestE.java" sourcepath="TestE.java"/>
+    </Type>
+    <Method classname="java.util.HashMap" name="get" signature="(Ljava/lang/Object;)Ljava/lang/Object;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.HashMap" start="553" end="553" startBytecode="0" endBytecode="130" sourcefile="HashMap.java" sourcepath="java/util/HashMap.java"/>
+    </Method>
+    <SourceLine classname="TestE" start="19" end="19" startBytecode="4" endBytecode="4" sourcefile="TestE.java" sourcepath="TestE.java"/>
+  </BugInstance>
+  <BugInstance type="NP_EQUALS_SHOULD_HANDLE_NULL_ARGUMENT" priority="2" rank="11" abbrev="NP" category="BAD_PRACTICE">
+    <Class classname="TestE">
+      <SourceLine classname="TestE" sourcefile="TestE.java" sourcepath="TestE.java"/>
+    </Class>
+    <Method classname="TestE" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="TestE" start="13" end="13" startBytecode="0" endBytecode="79" sourcefile="TestE.java" sourcepath="TestE.java"/>
+    </Method>
+    <LocalVariable name="o" register="1" pc="0" role="LOCAL_VARIABLE_PARAMETER_NAMED"/>
+  </BugInstance>
+  <BugInstance type="SE_NO_SERIALVERSIONID" priority="3" rank="19" abbrev="SnVI" category="BAD_PRACTICE">
+    <Class classname="TestE$UMap">
+      <SourceLine classname="TestE$UMap" start="3" end="3" sourcefile="TestE.java" sourcepath="TestE.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="EQ_UNUSUAL" priority="2" rank="17" abbrev="Eq" category="STYLE">
+    <Class classname="TestF">
+      <SourceLine classname="TestF" sourcefile="TestF.java" sourcepath="TestF.java"/>
+    </Class>
+    <Method classname="TestF" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="TestF" start="13" end="13" startBytecode="0" endBytecode="79" sourcefile="TestF.java" sourcepath="TestF.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="HE_EQUALS_USE_HASHCODE" priority="1" rank="14" abbrev="HE" category="BAD_PRACTICE">
+    <Class classname="TestF">
+      <SourceLine classname="TestF" sourcefile="TestF.java" sourcepath="TestF.java"/>
+    </Class>
+    <Method classname="TestF" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="TestF" start="13" end="13" startBytecode="0" endBytecode="79" sourcefile="TestF.java" sourcepath="TestF.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="NP_EQUALS_SHOULD_HANDLE_NULL_ARGUMENT" priority="2" rank="11" abbrev="NP" category="BAD_PRACTICE">
+    <Class classname="TestF">
+      <SourceLine classname="TestF" sourcefile="TestF.java" sourcepath="TestF.java"/>
+    </Class>
+    <Method classname="TestF" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="TestF" start="13" end="13" startBytecode="0" endBytecode="79" sourcefile="TestF.java" sourcepath="TestF.java"/>
+    </Method>
+    <LocalVariable name="o" register="1" pc="0" role="LOCAL_VARIABLE_PARAMETER_NAMED"/>
+  </BugInstance>
+  <BugInstance type="HE_SIGNATURE_DECLARES_HASHING_OF_UNHASHABLE_CLASS" priority="1" rank="5" abbrev="HE" category="CORRECTNESS">
+    <Class classname="TestF$UMap">
+      <SourceLine classname="TestF$UMap" start="3" end="3" sourcefile="TestF.java" sourcepath="TestF.java"/>
+    </Class>
+    <Class classname="TestF$UMap">
+      <SourceLine classname="TestF$UMap" sourcefile="TestF.java" sourcepath="TestF.java"/>
+    </Class>
+    <Type descriptor="LTestF;" role="TYPE_UNHASHABLE">
+      <SourceLine classname="TestF" start="2" end="19" sourcefile="TestF.java" sourcepath="TestF.java"/>
+    </Type>
+  </BugInstance>
+  <BugInstance type="SE_NO_SERIALVERSIONID" priority="3" rank="19" abbrev="SnVI" category="BAD_PRACTICE">
+    <Class classname="TestF$UMap">
+      <SourceLine classname="TestF$UMap" start="3" end="3" sourcefile="TestF.java" sourcepath="TestF.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="EQ_UNUSUAL" priority="2" rank="17" abbrev="Eq" category="STYLE">
+    <Class classname="TestG">
+      <SourceLine classname="TestG" sourcefile="TestG.java" sourcepath="TestG.java"/>
+    </Class>
+    <Method classname="TestG" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="TestG" start="13" end="13" startBytecode="0" endBytecode="79" sourcefile="TestG.java" sourcepath="TestG.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="HE_EQUALS_USE_HASHCODE" priority="1" rank="14" abbrev="HE" category="BAD_PRACTICE">
+    <Class classname="TestG">
+      <SourceLine classname="TestG" sourcefile="TestG.java" sourcepath="TestG.java"/>
+    </Class>
+    <Method classname="TestG" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="TestG" start="13" end="13" startBytecode="0" endBytecode="79" sourcefile="TestG.java" sourcepath="TestG.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="HE_USE_OF_UNHASHABLE_CLASS" priority="1" rank="1" abbrev="HE" category="CORRECTNESS">
+    <Class classname="TestG">
+      <SourceLine classname="TestG" sourcefile="TestG.java" sourcepath="TestG.java"/>
+    </Class>
+    <Method classname="TestG" name="get" signature="(LTestG;)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="TestG" start="19" end="19" startBytecode="0" endBytecode="52" sourcefile="TestG.java" sourcepath="TestG.java"/>
+    </Method>
+    <Type descriptor="LTestG;" role="TYPE_UNHASHABLE">
+      <SourceLine classname="TestG" start="2" end="19" sourcefile="TestG.java" sourcepath="TestG.java"/>
+    </Type>
+    <Method classname="java.util.HashMap" name="get" signature="(Ljava/lang/Object;)Ljava/lang/Object;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.HashMap" start="553" end="553" startBytecode="0" endBytecode="130" sourcefile="HashMap.java" sourcepath="java/util/HashMap.java"/>
+    </Method>
+    <SourceLine classname="TestG" start="19" end="19" startBytecode="4" endBytecode="4" sourcefile="TestG.java" sourcepath="TestG.java"/>
+  </BugInstance>
+  <BugInstance type="NP_EQUALS_SHOULD_HANDLE_NULL_ARGUMENT" priority="2" rank="11" abbrev="NP" category="BAD_PRACTICE">
+    <Class classname="TestG">
+      <SourceLine classname="TestG" sourcefile="TestG.java" sourcepath="TestG.java"/>
+    </Class>
+    <Method classname="TestG" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="TestG" start="13" end="13" startBytecode="0" endBytecode="79" sourcefile="TestG.java" sourcepath="TestG.java"/>
+    </Method>
+    <LocalVariable name="o" register="1" pc="0" role="LOCAL_VARIABLE_PARAMETER_NAMED"/>
+  </BugInstance>
+  <BugInstance type="SE_NO_SERIALVERSIONID" priority="3" rank="19" abbrev="SnVI" category="BAD_PRACTICE">
+    <Class classname="TestG$UMap">
+      <SourceLine classname="TestG$UMap" start="3" end="3" sourcefile="TestG.java" sourcepath="TestG.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="EQ_UNUSUAL" priority="2" rank="17" abbrev="Eq" category="STYLE">
+    <Class classname="TestH">
+      <SourceLine classname="TestH" sourcefile="TestH.java" sourcepath="TestH.java"/>
+    </Class>
+    <Method classname="TestH" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="TestH" start="13" end="13" startBytecode="0" endBytecode="79" sourcefile="TestH.java" sourcepath="TestH.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="HE_EQUALS_USE_HASHCODE" priority="1" rank="14" abbrev="HE" category="BAD_PRACTICE">
+    <Class classname="TestH">
+      <SourceLine classname="TestH" sourcefile="TestH.java" sourcepath="TestH.java"/>
+    </Class>
+    <Method classname="TestH" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="TestH" start="13" end="13" startBytecode="0" endBytecode="79" sourcefile="TestH.java" sourcepath="TestH.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="HE_USE_OF_UNHASHABLE_CLASS" priority="1" rank="1" abbrev="HE" category="CORRECTNESS">
+    <Class classname="TestH">
+      <SourceLine classname="TestH" sourcefile="TestH.java" sourcepath="TestH.java"/>
+    </Class>
+    <Method classname="TestH" name="get" signature="(LTestH;)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="TestH" start="19" end="19" startBytecode="0" endBytecode="52" sourcefile="TestH.java" sourcepath="TestH.java"/>
+    </Method>
+    <Type descriptor="LTestH;" role="TYPE_UNHASHABLE">
+      <SourceLine classname="TestH" start="2" end="19" sourcefile="TestH.java" sourcepath="TestH.java"/>
+    </Type>
+    <Method classname="java.util.HashMap" name="get" signature="(Ljava/lang/Object;)Ljava/lang/Object;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.HashMap" start="553" end="553" startBytecode="0" endBytecode="130" sourcefile="HashMap.java" sourcepath="java/util/HashMap.java"/>
+    </Method>
+    <SourceLine classname="TestH" start="19" end="19" startBytecode="4" endBytecode="4" sourcefile="TestH.java" sourcepath="TestH.java"/>
+  </BugInstance>
+  <BugInstance type="NP_EQUALS_SHOULD_HANDLE_NULL_ARGUMENT" priority="2" rank="11" abbrev="NP" category="BAD_PRACTICE">
+    <Class classname="TestH">
+      <SourceLine classname="TestH" sourcefile="TestH.java" sourcepath="TestH.java"/>
+    </Class>
+    <Method classname="TestH" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="TestH" start="13" end="13" startBytecode="0" endBytecode="79" sourcefile="TestH.java" sourcepath="TestH.java"/>
+    </Method>
+    <LocalVariable name="o" register="1" pc="0" role="LOCAL_VARIABLE_PARAMETER_NAMED"/>
+  </BugInstance>
+  <BugInstance type="SE_NO_SERIALVERSIONID" priority="3" rank="19" abbrev="SnVI" category="BAD_PRACTICE">
+    <Class classname="TestH$UMap">
+      <SourceLine classname="TestH$UMap" start="3" end="3" sourcefile="TestH.java" sourcepath="TestH.java"/>
+    </Class>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Thu, 6 Apr 2023 14:35:33 +0800" total_classes="16" referenced_classes="85" total_bugs="40" total_size="136" num_packages="1" java_version="11.0.17" vm_version="11.0.17+10-LTS-269" cpu_seconds="0.70" clock_seconds="12.70" peak_mbytes="429.66" alloc_mbytes="768.00" gc_seconds="0.00" priority_3="8" priority_2="16" priority_1="16">
+    <PackageStats package="" total_bugs="40" total_types="16" total_size="136" priority_3="8" priority_2="16" priority_1="16">
+      <ClassStats class="TestA" sourceFile="TestA.java" interface="false" size="14" bugs="3" priority_2="2" priority_1="1"/>
+      <ClassStats class="TestA$UMap" sourceFile="TestA.java" interface="false" size="3" bugs="2" priority_3="1" priority_1="1"/>
+      <ClassStats class="TestB" sourceFile="TestB.java" interface="false" size="14" bugs="4" priority_2="2" priority_1="2"/>
+      <ClassStats class="TestB$UMap" sourceFile="TestB.java" interface="false" size="3" bugs="1" priority_3="1"/>
+      <ClassStats class="TestC" sourceFile="TestC.java" interface="false" size="14" bugs="4" priority_2="2" priority_1="2"/>
+      <ClassStats class="TestC$UMap" sourceFile="TestC.java" interface="false" size="3" bugs="1" priority_3="1"/>
+      <ClassStats class="TestD" sourceFile="TestD.java" interface="false" size="14" bugs="4" priority_2="2" priority_1="2"/>
+      <ClassStats class="TestD$UMap" sourceFile="TestD.java" interface="false" size="3" bugs="1" priority_3="1"/>
+      <ClassStats class="TestE" sourceFile="TestE.java" interface="false" size="14" bugs="4" priority_2="2" priority_1="2"/>
+      <ClassStats class="TestE$UMap" sourceFile="TestE.java" interface="false" size="3" bugs="1" priority_3="1"/>
+      <ClassStats class="TestF" sourceFile="TestF.java" interface="false" size="14" bugs="3" priority_2="2" priority_1="1"/>
+      <ClassStats class="TestF$UMap" sourceFile="TestF.java" interface="false" size="3" bugs="2" priority_3="1" priority_1="1"/>
+      <ClassStats class="TestG" sourceFile="TestG.java" interface="false" size="14" bugs="4" priority_2="2" priority_1="2"/>
+      <ClassStats class="TestG$UMap" sourceFile="TestG.java" interface="false" size="3" bugs="1" priority_3="1"/>
+      <ClassStats class="TestH" sourceFile="TestH.java" interface="false" size="14" bugs="4" priority_2="2" priority_1="2"/>
+      <ClassStats class="TestH$UMap" sourceFile="TestH.java" interface="false" size="3" bugs="1" priority_3="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="68" invocations="487" avgMicrosecondsPerInvocation="139" maxMicrosecondsPerInvocation="3225" standardDeviationMicrosecondsPerInvocation="313"/>
+      <ClassProfile name="edu.umd.cs.findbugs.FindBugs2" totalMilliseconds="34" invocations="2" avgMicrosecondsPerInvocation="17333" maxMicrosecondsPerInvocation="21023" standardDeviationMicrosecondsPerInvocation="3688"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="13" invocations="85" avgMicrosecondsPerInvocation="159" maxMicrosecondsPerInvocation="2742" standardDeviationMicrosecondsPerInvocation="400"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="13" invocations="85" avgMicrosecondsPerInvocation="156" maxMicrosecondsPerInvocation="2409" standardDeviationMicrosecondsPerInvocation="362"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="11" invocations="171" avgMicrosecondsPerInvocation="68" maxMicrosecondsPerInvocation="591" standardDeviationMicrosecondsPerInvocation="91"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
