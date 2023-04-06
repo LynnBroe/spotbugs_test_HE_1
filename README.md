@@ -6,9 +6,11 @@
 
 **jdk Version: 11.0.17** 
 
-`src` folder: place source files. All the files have the same content.
+`src` folder: places source files. All the files have the same content.
 
-`classes` folder: place class files
+`test_only_TestA` folder: contains `TestA` class files
+
+`test_all` folder: contains all class files
 
 `test_only_TestA.xml`: use spotbugs only to analyze `TestA`. `HE_SIGNATURE_DECLARES_HASHING_OF_UNHASHABLE_CLASS` can be detected.
 
